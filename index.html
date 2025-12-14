@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="utf-8">
+    <title>Genvejstaster Spil</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f5faff, #e8f0fe);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        #game-container {
+            background: #fff;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            padding: 30px 40px;
+            width: 90%;
+            max-width: 600px;
+            text-align: center;
+        }
+        h1 {
+            margin-top: 0;
+            font-size: 2em;
+            color: #333;
+        }
+        #score {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        #task {
+            font-size: 1.4em;
+            margin-bottom: 20px;
+            color: #1976d2;
+            min-height: 2.5em;
+        }
+        #message {
+            font-size: 1.2em;
+            height: 2em;
+        }
+        .correct {
+            color: #009688;
+        }
+        .wrong {
+            color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <h1>Genvejstaster</h1>
+        <div id="score">Point: 0</div>
+        <div id="task"></div>
+        <div id="message"></div>
+    </div>
+    <!-- Tilføj et versionsnummer for at undgå cache af game.js -->
+    <script src="game.js?v=2"></script>
+</body>
+</html>
